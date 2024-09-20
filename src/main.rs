@@ -32,7 +32,6 @@ struct Main{
 struct Wind{
     speed: f64,
 }
-//a956802b91e087377a83ac37b2679c74
 // function to get the weather information from OpenWeatherMap API
 fn get_weather_info(city: &str, country_code: &str, api_key: &str) -> Result<WeatherResponse, reqwest::Error> {
     let url = format!(
